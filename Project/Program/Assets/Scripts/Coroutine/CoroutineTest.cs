@@ -50,8 +50,11 @@ namespace Coroutine
 
         private IEnumerator AsyncDuplicate()
         {
+            Debug.Log($"AsyncDuplicate1");
             yield return AsyncCopy();
+            Debug.Log($"AsyncDuplicate2");
             yield return AsyncPaste();
+            Debug.Log($"AsyncDuplicate3");
         }
 
         public void OnGUI()
