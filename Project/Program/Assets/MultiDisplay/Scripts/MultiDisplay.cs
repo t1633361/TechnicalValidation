@@ -11,14 +11,14 @@ namespace MultiDisplay.Scripts
         // Start is called before the first frame update
         void Awake()
         {
-            // Screen.SetResolution(Display.displays[0].systemWidth, Display.displays[0].systemHeight, FullScreenMode.FullScreenWindow);
-            //
-            // foreach (var display in Display.displays)
-            // {
-            //     display.Activate();
-            // }
-            //
-            // StartCoroutine(DeleteFullscreenMode());
+            Screen.SetResolution(Display.displays[0].systemWidth, Display.displays[0].systemHeight, FullScreenMode.FullScreenWindow);
+            
+            foreach (var display in Display.displays)
+            {
+                display.Activate();
+            }
+            
+            StartCoroutine(DeleteFullscreenMode());
 
         }
 

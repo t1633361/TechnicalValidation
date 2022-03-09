@@ -29,6 +29,8 @@ Fullscreen Mode可以设置4个模式
 
 通过查证注册表，进入项目，激活多屏后，等待一段时间，删除如下注册表中的选项就可以实现这个效果
 
+```
 Screenmanager Fullscreen mode Default_h401710285
+```
 
 
